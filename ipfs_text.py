@@ -13,4 +13,4 @@ with ipfshttpclient.connect("/ip4/127.0.0.1/tcp/5002") as client:
 
         # write to txt file
         with open("ipfs_hashes.txt", "a") as f:
-            f.write(hash["Hash"])
+            f.write(hash["Hash"] + "\n")
